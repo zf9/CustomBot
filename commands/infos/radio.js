@@ -67,39 +67,16 @@ module.exports = {
                     message.guild.me.voice.setSelfDeaf(true);
                     vc.play(`${URL1}`);
                 });  
+                return;
 
 
                 
             } catch (error) {
-            
+                return message.reply(error)
             } 
-            let ServerReply = await axios.get(URL2);
-            return console.log(ServerReply)
             
-            message.reply("Beginning playback of: ")
-            
-        }
-        catch (error)
-        {
-        }
-        return;
-        if (args[0] == "url")
-        {
-
-        }
-        else
-        {
-            try 
-            {
-                message.member.voice.channel.join().then(vc => {
-                    vc.voice.setSelfDeaf(true);
-                    //vc.play(`${configo.url}`);
-                });   
-                message.reply("Starting to play Bumper DrugsMusic")
-            }
-            catch (error)
-            {
-            }
-        }
+        } catch (error) {
+            return message.reply(error)
+        }        
     },
 };
