@@ -16,3 +16,5 @@ npm i pretty-ms@7.0.1
 npm i snekfetch@4.0.4 
 npm i xml2js@0.4.23
 ```
+
+When the bot is running an express server is created : http://127.0.0.1:4000/
