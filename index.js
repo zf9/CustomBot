@@ -1,5 +1,6 @@
 require("dotenv").config();
 const fs = require('fs');
+const express = require("express");
 const discord = require('discord.js');
 const { MessageEmbed } = require('discord.js');
 const client = new discord.Client({ disableMentions: 'everyone' });
@@ -37,21 +38,15 @@ client.login(client.config.discord.token);
 
 
 
-/*
-const express = require("express")
+
 const server = express()
-server.all("/api", (req, res) => {
+server.all("/", (req, res) => {
     let count = 0;
     client.guilds.cache.forEach((guild) => {
     count += guild.memberCount
     })
     res.json({ botname: `${client.user.username}`, totalserver: `${client.guilds.cache.size}`, totalchannels: `${client.channels.cache.size}`, totalmembers: `${count}`})
 });
-function apiserver1() {
-  server.listen("4000" || 6000, () => {
+server.listen("4000" || 6000, () => {
     console.log("Server is ready.")
-  })
-}
-module.exports = apiserver1
-apiserver1();
-*/
+})
