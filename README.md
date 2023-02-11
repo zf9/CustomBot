@@ -4,7 +4,7 @@ Log in to your Discord account and go to the [Discord Developer Portal](https://
 Select "New Application" and give it a name.  
 On the left-hand side of the application, go to the "Bot" tab and select "Add Bot"  
 Under the "Token" section, press the "Copy" button to copy the token  
-Paste the token into your code  
+Paste the token into your [code](https://github.com/zf9/MonsterOGRadio/blob/main/config/bot.js)  
 
  ```sh
 npm i @discordjs/opus@0.3.3 
