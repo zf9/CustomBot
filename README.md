@@ -1,5 +1,7 @@
 # MonsterOGRadio
-
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
  ```sh
 npm i @discordjs/opus@0.3.3 
 npm i discord-player@3.3.2 
