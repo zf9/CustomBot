@@ -1,5 +1,11 @@
 # MonsterOGRadio
 
+Log in to your Discord account and go to the [Discord Developer Portal](https://discord.com/developers/applications)
+Select "New Application" and give it a name.
+On the left-hand side of the application, go to the "Bot" tab and select "Add Bot"
+Under the "Token" section, press the "Copy" button to copy the token
+Paste the token into your code
+
  ```sh
 npm i @discordjs/opus@0.3.3 
 npm i discord-player@3.3.2 
