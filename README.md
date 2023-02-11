@@ -18,4 +18,4 @@ npm i xml2js@0.4.23
 ```
 
 When the bot is running an express server is created : http://127.0.0.1:4000/  
-Invite Bot By going to http://127.0.0.1:4000/invite
+Invite bot by going to : http://127.0.0.1:4000/invite
