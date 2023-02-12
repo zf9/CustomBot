@@ -15,6 +15,7 @@ module.exports = {
     utilisation: '{prefix}radio <args>',
     async execute(client, message, args) {
         if (!message.guild) return;
+        if (!args[0]) return message.reply("The provided arguments do not match the configuration. Please double-check the provided arguments and try again.");
         try 
         {
             let RadioStation = args[0].toLowerCase();
