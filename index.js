@@ -40,6 +40,10 @@ client.login(client.config.discord.token);
 
 
 const server = express()
+server.get('/invite', (req, res) => {
+    //res.send(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`)
+    res.redirect(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`);
+})
 server.all("/", (req, res) => {
     let count = 0;
     client.guilds.cache.forEach((guild) => {
