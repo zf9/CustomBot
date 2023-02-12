@@ -34,7 +34,9 @@ for (const file of Process) {
 };
 
 
-client.login(client.config.discord.token);
+client.login(client.config.discord.token).catch(err => {
+    return console.log(`It appears you are having trouble logging into Discord! Invalid Token?`);
+});
 
 
 
